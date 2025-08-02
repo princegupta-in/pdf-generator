@@ -198,8 +198,8 @@ const PDFGenerator = () => {
             <h3 className="text-sm font-medium text-gray-700 mb-2">Instructions:</h3>
             <ul className="text-sm text-gray-600 space-y-1">
               <li>• Fill in all required fields marked with *</li>
-              <li>• Click "Preview PDF" to see how your document will look</li>
-              <li>• Click "Download PDF" to save your professional profile</li>
+              <li>• Click &quot;Preview PDF&quot; to see how your document will look</li>
+              <li>• Click &quot;Download PDF&quot; to save your professional profile</li>
             </ul>
           </div>
         </div>
@@ -227,7 +227,7 @@ const PDFGenerator = () => {
                 <p className="mt-1 text-sm text-gray-500">
                   {!isFormValid 
                     ? 'Fill in all required fields to see preview' 
-                    : 'Click "Preview PDF" to see your document'
+                    : 'Click &quot;Preview PDF&quot; to see your document'
                   }
                 </p>
               </div>

@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { validatePhoneNumber, getCountryByCode } from './countries'
+import { validatePhoneNumber } from './countries'
 
 // User details validation schema
 export const userDetailsSchema = z.object({
@@ -58,7 +58,7 @@ export type ValidationResult = {
 }
 
 // Validate function with detailed error handling
-export const validateUserDetails = (data: any): ValidationResult => {
+export const validateUserDetails = (data: unknown): ValidationResult => {
   try {
     const validatedData = userDetailsSchema.parse(data)
     return {
